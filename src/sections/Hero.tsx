@@ -7,7 +7,6 @@ import StarIcon from '@assets/icons/star.svg';
 import { HeroOrbit } from "@/components/HeroOrbit";
 import SparkleIcon from '@assets/icons/sparkle.svg';
 import { motion } from "framer-motion"; // Import Framer Motion
-import { useState } from "react";
 
 export const HeroSection = () => {
     const scrollToSection = (sectionId: string) => {
@@ -115,7 +114,7 @@ export const HeroSection = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: false, margin: "0px 0px -50px 0px" }}
                         >
-                            Hi, I'm Anand Akbari
+                            Hi, I am Anand Akbari
                         </motion.h1>
 
                         <motion.p

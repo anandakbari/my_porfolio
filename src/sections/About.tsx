@@ -2,7 +2,7 @@
 import { SectionHeader } from "@/components/SectionHeader";
 import React, { useRef } from "react";
 import { Card } from "@/components/Card";
-import StarIcon from "@assets/icons/star.svg";
+
 import BookImage from "@assets/images/img_1.png";
 import Image from "next/image";
 import JavascriptIcon from '@assets/icons/square-js.svg';
@@ -17,8 +17,7 @@ import dockerIcon from "@assets/icons/docker.svg";
 import { motion } from "framer-motion";
 import javaIcon from "@assets/icons/java.svg";
 import awsIcon from "@assets/icons/aws.svg";
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
+
 
 // Toolbox and hobbies data...
 const toolboxItems = [
@@ -86,7 +85,7 @@ export const AboutSection = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: false, margin: "0px 0px -50px 0px", root: { constraintRef } }}
+                            viewport={{ once: false, margin: "0px 0px -50px 0px" }}
                             className={"grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-8"}
                         >
                             <Card className={"h-[320px] flex flex-col md:col-span-3 lg:col-span-2"}>
